@@ -109,12 +109,60 @@ namespace home_work_001
             //בכל פעם שהמשתמש מכניס מספר — הדפס אותו.
             //כאשר הוא מכניס 0 — עצור את התוכנית.
 
-            int num = int.Parse(Console.ReadLine());
-            while (num > 0)
-            {
-                num = int.Parse(Console.ReadLine());
-                Console.WriteLine(num);
-            }
+            //int num = int.Parse(Console.ReadLine());
+            //while (num != 0)
+            //{
+            //    num = int.Parse(Console.ReadLine());
+            //    Console.WriteLine(num);
+            //}
+            //.11
+            //מציאת המספר הגדול מבין 3 מספרים(בלי להשתמש ב‑Math.Max)
+            //קבל 3 מספרים מהמשתמש והדפס מי הגדול ביותר.
+            //Console.WriteLine("Enter first number:");
+            //int num1 = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Enter second number:");
+            //int num2 = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Enter third number:");
+            //int num3 = int.Parse(Console.ReadLine());
+
+            //if (num1 > num2 && num1 > num3)
+            //{
+            //    Console.WriteLine($"The biggest number is: {num1}");
+            //}
+            //else if (num2 > num1 && num2 > num3)
+            //{
+            //    Console.WriteLine($"The biggest number is: {num2}");
+            //}
+            //else if (num3 > num1 && num3 > num2)
+            //{
+            //    Console.WriteLine($"The biggest number is: {num3}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Some numbers are equal.");
+            //}
+
+            //12.
+            //קבל מספר מהמשתמש(למשל 54321)
+            //והדפס כמה ספרות יש בו.
+            //דוגמה:
+            //קלט: 54321
+            //פלט: 5 ספרות
+
+            //Console.WriteLine("Enter a number (min 3 digits):");
+            //int num = int.Parse(Console.ReadLine());
+            //int count = 0;
+            //while (num > 0)
+            //{
+            //    num = num / 10;
+            //    count++;
+            //}
+            //Console.WriteLine($"Number of digits: {count}");
+
+
+
         }
     }
 }
