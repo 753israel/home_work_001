@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualBasic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace home_work_001
 {
@@ -161,7 +162,36 @@ namespace home_work_001
             //}
             //Console.WriteLine($"Number of digits: {count}");
 
+            //כתוב תוכנית ב‑C# שמבקשת מהמשתמש מספרים שוב ושוב, עד שהוא מכניס מספר שלילי.
+            //בכל פעם שהמשתמש מכניס מספר חיובי או אפס —
+            //התוכנית צריכה:
+            //להוסיף אותו לסכום מצטבר
+            //לספור כמה מספרים הוזנו
+            //להדפיס את המספר שהוזן
+            //כאשר המשתמש מכניס מספר שלילי —
+            //התוכנית תעצור ותדפיס:
+            //          כמה מספרים הוזנו
+            //   מה הסכום שלהם
+            //מה הממוצע שלהם
+            Console.WriteLine("Enter a positive number (negative to stop):");
+            int num = int.Parse(Console.ReadLine());
 
+            int sum = 0;
+            int count = 0;
+
+            while (num >= 0)
+            {
+                sum += num;
+                count++;
+
+                Console.WriteLine($"You entered: {num}");
+
+                num = int.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine($"Total numbers: {count}");
+            Console.WriteLine($"Sum: {sum}");
+            Console.WriteLine($"Average: {(double)sum / count}");
 
         }
     }
